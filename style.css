@@ -3,3 +3,51 @@ body{
     display: flex;
     border: solid 1px black;
 }
+
+/* aside = partie gauche du CV */
+
+aside{
+    width: 30%;
+    background-color: #273c75;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo{
+    display: flex;
+}
+
+.profil_pic{
+    width: 60%;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+aside h3 {
+    border-bottom: solid 1px #e84118;
+    background-color: white;
+    color: #273c75;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+aside p{
+    color: white;
+    padding: 10px 40px 10px 40px;
+}
+
+.about_me{
+    padding-bottom: 500px;
+    }
+    
+.icones_loisirs {
+    display: flex;
+    font-size: 2.5em;
+    color: white;
+    justify-content: space-around;
+    padding: 30px 40px 0px 40px;
+    height: 110px;
+}
