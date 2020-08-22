@@ -109,3 +109,18 @@ section i{
     display: flex;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 830px) {
+    body {
+display: block;
+  }
+  aside {
+      width: 100%;
+  }
+  section{
+      width: 100%;
+  }
+  .oc, .bts, .reco, .latam, .emirates, .aa{
+    flex-wrap: wrap;
+}
+}
