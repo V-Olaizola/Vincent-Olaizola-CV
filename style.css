@@ -42,7 +42,7 @@ aside p{
 .about_me{
     padding-bottom: 500px;
     }
-    
+
 .icones_loisirs {
     display: flex;
     font-size: 2.5em;
@@ -50,4 +50,62 @@ aside p{
     justify-content: space-around;
     padding: 30px 40px 0px 40px;
     height: 110px;
+}
+
+/* section = partie droite du CV */
+
+section{
+    width: 70%;
+    padding: 40px;
+    color: #273c75;
+}
+
+.first_name{
+    color: #e84118;
+}
+
+.last_name{
+    font-size: 1.5em;
+}
+
+section h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+section h3{
+    padding-bottom: 50px;
+    margin-top: 0;
+}
+
+section h2{
+    text-transform: uppercase;
+    border-bottom: solid 1px #e84118;
+    padding: 10px;
+}
+
+.soulignement{
+    padding-bottom: 10px;
+    border-bottom: solid 1px #e84118;
+}
+
+section i{
+    color: #e84118;
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+
+.oc, .bts, .latam, .emirates, .aa{
+    display: flex;
+}
+
+.date_lieu{
+    min-width: 150px;
+    margin-right: 100px;
+}
+
+.reco{
+    display: flex;
+    justify-content: space-around;
 }
