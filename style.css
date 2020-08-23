@@ -122,5 +122,5 @@ display: block;
   }
   .oc, .bts, .reco, .latam, .emirates, .aa{
     flex-wrap: wrap;
-}
+    width: 100%;}
 }
