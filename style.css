@@ -1,126 +1,151 @@
-body{
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    border: solid 1px black;
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  border: solid 1px black;
 }
 
 /* aside = partie gauche du CV */
 
-aside{
-    width: 30%;
-    background-color: #273c75;
-    display: flex;
-    flex-direction: column;
+aside {
+  width: 30%;
+  background-color: #273c75;
+  display: flex;
+  flex-direction: column;
 }
 
-.photo{
-    display: flex;
+#photo {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.profil_pic{
-    width: 60%;
-    border: solid 1px white;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 20px;
+.profil_pic {
+  border: solid 1px white;
+  border-radius: 50%;
 }
 
-aside h3 {
-    border-bottom: solid 1px #e84118;
-    background-color: white;
-    color: #273c75;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
+aside h2 {
+  border-bottom: solid 1px #e84118;
+  background-color: white;
+  color: #273c75;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-aside p{
-    color: white;
-    padding: 10px 40px 10px 40px;
+aside p {
+  color: white;
 }
 
-.about_me{
-    padding-bottom: 500px;
-    }
+.cellule_aside {
+  padding: 20px;
+}
+
+#a_propos {
+  flex: 3;
+}
 
 .icones_loisirs {
-    display: flex;
-    font-size: 2.5em;
-    color: white;
-    justify-content: space-around;
-    padding: 30px 40px 0px 40px;
-    height: 110px;
+  display: flex;
+  font-size: 200%;
+  color: white;
+  justify-content: space-between;
+  padding: 40px;
 }
 
 /* section = partie droite du CV */
 
-section{
-    width: 70%;
-    padding: 40px;
-    color: #273c75;
+section {
+  width: 70%;
+  padding: 40px;
+  color: #273c75;
 }
 
-.first_name{
-    color: #e84118;
+/* entete */
+
+.first_name {
+  color: #e84118;
+}
+.last_name {
+  font-size: 1.5em;
 }
 
-.last_name{
-    font-size: 1.5em;
+/* formation */
+
+.titre_article {
+  display: flex;
+  padding: 30px 0 10px 0;
 }
 
-section h1{
-    text-transform: uppercase;
-    font-size: 2.5em;
-    margin-bottom: 0;
+.infos_article {
+  display: flex;
 }
 
-section h3{
-    padding-bottom: 50px;
-    margin-top: 0;
+.infos_article_reco {
+  display: flex;
+  justify-content: space-around;
 }
 
-section h2{
-    text-transform: uppercase;
-    border-bottom: solid 1px #e84118;
-    padding: 10px;
+.big_icon {
+  width: 10%;
+  font-size: xx-large;
+  margin: 0;
+}
+.icone_date {
+  display: flex;
+  width: 40%;
 }
 
-.soulignement{
-    padding-bottom: 10px;
-    border-bottom: solid 1px #e84118;
+.detail_article {
+  width: 60%;
 }
 
-section i{
-    color: #e84118;
-    font-size: 1.5em;
-    padding-right: 30px;
+.date_lieu {
+  width: 90%;
 }
 
-.oc, .bts, .latam, .emirates, .aa{
-    display: flex;
+.icone {
+  width: 10%;
 }
 
-.date_lieu{
-    min-width: 150px;
-    margin-right: 100px;
+section h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin: 0;
 }
 
-.reco{
-    display: flex;
-    justify-content: space-around;
+section h2 {
+  text-transform: uppercase;
+  border-bottom: solid 1px #e84118;
+  margin: 0%;
+  width: 90%;
+}
+section h4 {
+  text-transform: uppercase;
+}
+
+.soulignement {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #e84118;
+}
+
+section i {
+  color: #e84118;
 }
 
 @media screen and (max-width: 830px) {
-    body {
-display: block;
+  body {
+    flex-direction: column;
   }
   aside {
-      width: 100%;
+    width: 100%;
   }
-  section{
-      width: 100%;
+  section {
+    width: 100%;
+    padding: 0;
   }
-  .oc, .bts, .reco, .latam, .emirates, .aa{
-    flex-wrap: wrap;
-    width: 100%;}
+  .infos_article {
+    display: block;
+  }
 }
