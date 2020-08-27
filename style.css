@@ -118,7 +118,7 @@ section h1 {
 section h2 {
   text-transform: uppercase;
   border-bottom: solid 1px #e84118;
-  margin: 0%;
+  margin: 0;
   width: 90%;
 }
 section h4 {
@@ -133,8 +133,7 @@ section h4 {
 section i {
   color: #e84118;
 }
-
-@media screen and (max-width: 830px) {
+@media screen and (max-device-width: 812px) {
   body {
     flex-direction: column;
   }
@@ -142,10 +141,25 @@ section i {
     width: 100%;
   }
   section {
-    width: 100%;
-    padding: 0;
+    width: 95%;
+    padding: 10px 10px 0 10px;
   }
+  h1 {
+    font-size: 0em;
+  }
+
   .infos_article {
-    display: block;
+    text-align: center;
+  }
+  section h1 {
+    font-size: 1.5em;
+  }
+  .big_icon {
+    width: 20%;
+    font-size: xx-large;
+    margin: 0;
+  }
+  section h2 {
+    width: 80%;
   }
 }
