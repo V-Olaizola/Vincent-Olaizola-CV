@@ -71,8 +71,6 @@ section {
   font-size: 1.5em;
 }
 
-/* formation */
-
 .titre_article {
   display: flex;
   padding: 30px 0 10px 0;
@@ -133,7 +131,7 @@ section h4 {
 section i {
   color: #e84118;
 }
-@media screen and (max-device-width: 812px) {
+@media screen and (max-width: 812px) {
   body {
     flex-direction: column;
   }
@@ -143,23 +141,42 @@ section i {
   section {
     width: 95%;
     padding: 10px 10px 0 10px;
+    font-size: 0.9em;
   }
   h1 {
     font-size: 0em;
   }
 
   .infos_article {
-    text-align: center;
+    text-align: left;
   }
   section h1 {
     font-size: 1.5em;
+    margin-top: 20px;
   }
   .big_icon {
-    width: 20%;
-    font-size: xx-large;
+    width: 40%;
+    font-size: x-large;
     margin: 0;
+    text-align: center;
   }
   section h2 {
-    width: 80%;
+    width: 60%;
+    font-size: 1.1em;
+  }
+
+  .infos_article_reco {
+    flex-direction: column;
+    margin-left: 40%;
+  }
+  .icone_date {
+    text-align: center;
+  }
+  .date_lieu {
+    width: 50%;
+    text-align: left;
+  }
+  .icone {
+    width: 50%;
   }
 }
