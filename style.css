@@ -58,11 +58,15 @@ aside p {
 
 section {
   width: 70%;
-  padding: 40px;
   color: #273c75;
+  padding: 40px;
 }
 
 /* entete */
+
+#entete {
+  margin: 50px 0;
+}
 
 .first_name {
   color: #e84118;
@@ -73,7 +77,9 @@ section {
 
 .titre_article {
   display: flex;
-  padding: 30px 0 10px 0;
+  padding: 30px 0 0 0;
+  border-bottom: solid 1px #e84118;
+  margin-bottom: 15px;
 }
 
 .infos_article {
@@ -82,12 +88,17 @@ section {
 
 .infos_article_reco {
   display: flex;
-  justify-content: space-around;
+}
+.reco_first {
+  width: 50%;
+}
+.reco_second {
+  width: 50%;
 }
 
 .big_icon {
-  width: 10%;
-  font-size: xx-large;
+  width: 7%;
+  font-size: 1.7em;
   margin: 0;
 }
 .icone_date {
@@ -115,23 +126,52 @@ section h1 {
 
 section h2 {
   text-transform: uppercase;
-  border-bottom: solid 1px #e84118;
   margin: 0;
-  width: 90%;
+  width: 93%;
+}
+section h3 {
+  margin-top: 0;
 }
 section h4 {
   text-transform: uppercase;
 }
 
 .soulignement {
-  padding-bottom: 10px;
   border-bottom: solid 1px #e84118;
 }
 
 section i {
   color: #e84118;
 }
-@media screen and (max-width: 812px) {
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) and (max-width: 830px) {
+  .profil_pic {
+    width: 90%;
+  }
+  aside h2 {
+    font-size: 1em;
+  }
+  .icones_loisirs {
+    padding: 20px;
+    font-size: 150%;
+  }
+  section {
+    font-size: 0.8em;
+  }
+  #entete {
+    margin-top: 0;
+  }
+  .big_icon {
+    width: 10%;
+  }
+  .icone {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 599px) {
   body {
     flex-direction: column;
   }
@@ -143,10 +183,12 @@ section i {
     padding: 10px 10px 0 10px;
     font-size: 0.9em;
   }
+  #entete {
+    margin: 0;
+  }
   h1 {
     font-size: 0em;
   }
-
   .infos_article {
     text-align: left;
   }
@@ -155,28 +197,19 @@ section i {
     margin-top: 20px;
   }
   .big_icon {
-    width: 40%;
-    font-size: x-large;
+    width: 13%;
+    font-size: 1.5em;
     margin: 0;
-    text-align: center;
   }
   section h2 {
-    width: 60%;
+    width: 87%;
     font-size: 1.1em;
   }
-
-  .infos_article_reco {
-    flex-direction: column;
-    margin-left: 40%;
-  }
-  .icone_date {
-    text-align: center;
-  }
   .date_lieu {
-    width: 50%;
+    width: 80%;
     text-align: left;
   }
   .icone {
-    width: 50%;
+    width: 20%;
   }
 }
