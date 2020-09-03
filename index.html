@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cv en Ligne</title>
+    <title>Cv Vincent Olaizola</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="images/pic_cv.png" />
     <script
@@ -12,18 +12,18 @@
     ></script>
   </head>
   <body>
-    <!-- aside = section de gauche -->
+    <!-- aside = partie de gauche -->
     <aside>
-      <div id="photo">
+      <section id="photo">
         <img
           class="profil_pic"
           src="images/pic_cv.png"
           alt="photo de profil de vincent olaizola"
           title="photo de profil"
         />
-      </div>
+      </section>
 
-      <div id="contact">
+      <section id="contact">
         <h2>contact</h2>
         <div class="cellule_aside">
           <p>
@@ -33,19 +33,21 @@
           </p>
           <p>
             Mobile<br />
-            +971 5564 89 399
+            <a class="lien" href="tel:+971556489399"> +971 55 64 89 399</a>
           </p>
           <p>
             Email<br />
-            olaizola.v@gmail.com
+            <a class="lien" href="mailto:olaizola.v@gmail.com">
+              olaizola.v@gmail.com</a
+            >
           </p>
           <p>
             Linkedin<br />
             olaizola/linkedin.com
           </p>
         </div>
-      </div>
-      <div id="a_propos">
+      </section>
+      <section id="a_propos">
         <h2>A propos de moi</h2>
         <div class="cellule_aside">
           <p>
@@ -62,20 +64,20 @@
             passionnante.
           </p>
         </div>
-      </div>
-      <div id="loisirs">
+      </section>
+      <section id="loisirs">
         <h2>loisirs</h2>
         <div class="icones_loisirs">
           <i class="far fa-futbol"></i>
           <i class="fas fa-glass-cheers"></i>
           <i class="fas fa-plane-departure"></i>
         </div>
-      </div>
+      </section>
     </aside>
 
     <!-- section de droite -->
 
-    <section>
+    <main>
       <header id="entete">
         <h1>
           <span class="first_name">Vincent</span>
@@ -84,12 +86,12 @@
         <h3><span class="soulignement">Dével</span>oppeur web freelance</h3>
       </header>
       <article id="formation">
-        <div class="titre_article">
+        <section class="titre_article">
           <p class="big_icon"><i class="fas fa-graduation-cap"></i></p>
           <h2>formation</h2>
-        </div>
-        <div class="details_formations">
-          <div class="infos_article">
+        </section>
+        <section class="details_formations">
+          <section class="infos_article">
             <div class="icone_date">
               <p class="icone"><i class="far fa-dot-circle"></i></p>
               <p class="date_lieu">2020 <br />Dubai <br />EAU</p>
@@ -104,8 +106,8 @@
                 Mais aussi: PHP | mySQL
               </p>
             </div>
-          </div>
-          <div class="infos_article">
+          </section>
+          <section class="infos_article">
             <div class="icone_date">
               <p class="icone"><i class="fas fa-circle"></i></p>
               <p class="date_lieu">2002 <br />Bordeaux <br />France</p>
@@ -119,16 +121,16 @@
                 environnement économique, juridique et technique.
               </p>
             </div>
-          </div>
-        </div>
+          </section>
+        </section>
       </article>
       <article id="experience">
-        <div class="titre_article">
+        <section class="titre_article">
           <p class="big_icon"><i class="fas fa-briefcase"></i></p>
           <h2>expérience professionnelle</h2>
-        </div>
-        <div class="detail_experience">
-          <div class="infos_article">
+        </section>
+        <section class="detail_experience">
+          <section class="infos_article">
             <div class="icone_date">
               <p class="icone"><i class="fas fa-circle"></i></p>
               <p class="date_lieu">2019 <br />Hong Kong</p>
@@ -143,8 +145,8 @@
                 téléphone et e-mail en respectant nos objectifs.
               </p>
             </div>
-          </div>
-          <div class="infos_article">
+          </section>
+          <section class="infos_article">
             <div class="icone_date">
               <p class="icone"><i class="fas fa-circle"></i></p>
               <p class="date_lieu">2016-2018 <br />Paris <br />France</p>
@@ -160,17 +162,15 @@
                 clients.
               </p>
             </div>
-          </div>
-          <div class="infos_article">
+          </section>
+          <section class="infos_article">
             <div class="icone_date">
               <p class="icone"><i class="fas fa-circle"></i></p>
               <p class="date_lieu">2011-2016 <br />Paris <br />France</p>
             </div>
             <div class="detail_article">
               <h4 class="aa">American Airlines</h4>
-              <p>
-                Group Sales Representative
-              </p>
+              <p>Group Sales Representative</p>
               <p>
                 Gérer toutes les réservations de groupe du client depuis la
                 requête jusqu'à l'atterrissage des passagers. Négocier les
@@ -178,19 +178,19 @@
                 et conditions des contrats aux besoins des clients.
               </p>
             </div>
-          </div>
-        </div>
+          </section>
+        </section>
       </article>
       <article id="recommandations">
-        <div class="titre_article">
+        <section class="titre_article">
           <p class="big_icon"><i class="fas fa-pencil-alt"></i></p>
           <h2>recommandations</h2>
-        </div>
-        <div class="infos_article_reco">
+        </section>
+        <section class="infos_article_reco">
           <div class="reco_first">
             <p>
               Bod Dupont <br />
-              Genral Manager <br />
+              General Manager <br />
               Emirates
             </p>
             <p>
@@ -201,7 +201,7 @@
           <div class="reco_second">
             <p>
               Sarah Dupont <br />
-              Genral Manager <br />
+              General Manager <br />
               American Airlines
             </p>
             <p>
@@ -209,8 +209,8 @@
               Email : sarah@mail.com
             </p>
           </div>
-        </div>
+        </section>
       </article>
-    </section>
+    </main>
   </body>
 </html>

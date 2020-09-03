@@ -1,3 +1,9 @@
+html {
+  --primary: #273c75;
+  --secondary: #e84118;
+  --tertiary: white;
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
@@ -8,7 +14,7 @@ body {
 
 aside {
   width: 30%;
-  background-color: #273c75;
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
 }
@@ -20,14 +26,14 @@ aside {
 }
 
 .profil_pic {
-  border: solid 1px white;
+  border: solid 1px var(--tertiary);
   border-radius: 50%;
 }
 
 aside h2 {
-  border-bottom: solid 1px #e84118;
-  background-color: white;
-  color: #273c75;
+  border-bottom: solid 1px var(--secondary);
+  background-color: var(--tertiary);
+  color: var(--primary);
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
@@ -35,11 +41,14 @@ aside h2 {
 }
 
 aside p {
-  color: white;
+  color: var(--tertiary);
 }
 
 .cellule_aside {
   padding: 20px;
+}
+.lien {
+  color: var(--tertiary);
 }
 
 #a_propos {
@@ -49,16 +58,16 @@ aside p {
 .icones_loisirs {
   display: flex;
   font-size: 200%;
-  color: white;
+  color: var(--tertiary);
   justify-content: space-between;
   padding: 40px;
 }
 
 /* section = partie droite du CV */
 
-section {
+main {
   width: 70%;
-  color: #273c75;
+  color: var(--primary);
   padding: 40px;
 }
 
@@ -69,7 +78,7 @@ section {
 }
 
 .first_name {
-  color: #e84118;
+  color: var(--secondary);
 }
 .last_name {
   font-size: 1.5em;
@@ -78,7 +87,7 @@ section {
 .titre_article {
   display: flex;
   padding: 30px 0 0 0;
-  border-bottom: solid 1px #e84118;
+  border-bottom: solid 1px var(--secondary);
   margin-bottom: 15px;
 }
 
@@ -118,35 +127,35 @@ section {
   width: 10%;
 }
 
-section h1 {
+main h1 {
   text-transform: uppercase;
   font-size: 2.5em;
   margin: 0;
 }
 
-section h2 {
+main h2 {
   text-transform: uppercase;
   margin: 0;
   width: 93%;
 }
-section h3 {
+main h3 {
   margin-top: 0;
 }
-section h4 {
+main h4 {
   text-transform: uppercase;
 }
 
 .soulignement {
-  border-bottom: solid 1px #e84118;
+  border-bottom: solid 1px var(--secondary);
 }
 
-section i {
-  color: #e84118;
+main i {
+  color: var(--secondary);
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 600px) and (max-width: 830px) {
+@media screen and (min-width: 680px) and (max-width: 830px) {
   .profil_pic {
     width: 90%;
   }
@@ -157,7 +166,7 @@ section i {
     padding: 20px;
     font-size: 150%;
   }
-  section {
+  main {
     font-size: 0.8em;
   }
   #entete {
@@ -171,28 +180,51 @@ section i {
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 679px) {
   body {
+    display: flex;
     flex-direction: column;
   }
   aside {
+    font-size: 0.9em;
     width: 100%;
+    background-color: var(--tertiary);
+    order: 1;
   }
-  section {
+  #photo {
+    display: none;
+  }
+  aside h2 {
+    font-size: 1.1em;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    margin-bottom: 0;
+    padding: 10px 10px 0 10px;
+  }
+
+  aside p {
+    color: var(--primary);
+  }
+
+  main {
     width: 95%;
     padding: 10px 10px 0 10px;
     font-size: 0.9em;
+    order: 0;
   }
+
   #entete {
     margin: 0;
+    text-align: center;
   }
+
   h1 {
     font-size: 0em;
   }
   .infos_article {
     text-align: left;
   }
-  section h1 {
+  main h1 {
     font-size: 1.5em;
     margin-top: 20px;
   }
@@ -201,7 +233,7 @@ section i {
     font-size: 1.5em;
     margin: 0;
   }
-  section h2 {
+  main h2 {
     width: 87%;
     font-size: 1.1em;
   }
@@ -211,5 +243,23 @@ section i {
   }
   .icone {
     width: 20%;
+  }
+  .icones_loisirs {
+    color: var(--primary);
+  }
+
+  #a_propos {
+    padding-top: 40px;
+    order: 0;
+  }
+  #contact {
+    order: 1;
+    text-align: center;
+  }
+  #loisirs {
+    order: 2;
+  }
+  .lien {
+    color: var(--primary);
   }
 }
