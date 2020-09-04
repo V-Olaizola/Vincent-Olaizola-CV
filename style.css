@@ -1,9 +1,3 @@
-:root {
-  --primary: #273c75;
-  --secondary: #e84118;
-  --tertiary: white;
-}
-
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
@@ -14,7 +8,7 @@ body {
 
 aside {
   width: 30%;
-  background-color: var(--primary);
+  background-color: #273c75;
   display: flex;
   flex-direction: column;
 }
@@ -26,14 +20,14 @@ aside {
 }
 
 .profil_pic {
-  border: solid 1px var(--tertiary);
+  border: solid 1px white;
   border-radius: 50%;
 }
 
 aside h2 {
-  border-bottom: solid 1px var(--secondary);
-  background-color: var(--tertiary);
-  color: var(--primary);
+  border-bottom: solid 1px #e84118;
+  background-color: white;
+  color: #273c75;
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
@@ -41,14 +35,14 @@ aside h2 {
 }
 
 aside p {
-  color: var(--tertiary);
+  color: white;
 }
 
 .cellule_aside {
   padding: 20px;
 }
 .lien {
-  color: var(--tertiary);
+  color: white;
 }
 
 #a_propos {
@@ -58,7 +52,7 @@ aside p {
 .icones_loisirs {
   display: flex;
   font-size: 200%;
-  color: var(--tertiary);
+  color: white;
   justify-content: space-between;
   padding: 40px;
 }
@@ -67,7 +61,7 @@ aside p {
 
 main {
   width: 70%;
-  color: var(--primary);
+  color: #273c75;
   padding: 40px;
 }
 
@@ -78,7 +72,7 @@ main {
 }
 
 .first_name {
-  color: var(--secondary);
+  color: #e84118;
 }
 .last_name {
   font-size: 1.5em;
@@ -87,7 +81,7 @@ main {
 .titre_article {
   display: flex;
   padding: 30px 0 0 0;
-  border-bottom: solid 1px var(--secondary);
+  border-bottom: solid 1px #e84118;
   margin-bottom: 15px;
 }
 
@@ -146,11 +140,11 @@ main h4 {
 }
 
 .soulignement {
-  border-bottom: solid 1px var(--secondary);
+  border-bottom: solid 1px #e84118;
 }
 
 main i {
-  color: var(--secondary);
+  color: #e84118;
 }
 
 /* MEDIA QUERIES */
@@ -188,7 +182,7 @@ main i {
   aside {
     font-size: 0.9em;
     width: 100%;
-    background-color: var(--tertiary);
+    background-color: white;
     order: 1;
   }
   #photo {
@@ -196,14 +190,14 @@ main i {
   }
   aside h2 {
     font-size: 1.1em;
-    background-color: var(--tertiary);
-    color: var(--primary);
+    background-color: white;
+    color: #273c75;
     margin-bottom: 0;
     padding: 10px 10px 0 10px;
   }
 
   aside p {
-    color: var(--primary);
+    color: #273c75;
   }
 
   main {
@@ -245,7 +239,7 @@ main i {
     width: 20%;
   }
   .icones_loisirs {
-    color: var(--primary);
+    color: #273c75;
   }
 
   #a_propos {
@@ -260,6 +254,6 @@ main i {
     order: 2;
   }
   .lien {
-    color: var(--primary);
+    color: #273c75;
   }
 }
